@@ -1,8 +1,9 @@
+import {Link} from "react-router-dom";
+
 const Projects = () => {
     return <div className="container container_portfolio">
-        <div>Project 1</div>
-        <div>Project 2</div>
-        <div>Project 3</div>
+        <Link to="/projects/ride-sharing-platform">Ride Sharing Platform</Link>
+        <Link to="/projects/tower-defence">Tower Defence</Link>
     </div>
 }
 

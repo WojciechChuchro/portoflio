@@ -37,6 +37,11 @@ nav {
     align-items: center;
 }
 
+footer {
+    position: fixed;
+    bottom: 35px;
+    text-align: center;
+}
 svg {
     width: 30px;
     height: 30px;
@@ -48,9 +53,10 @@ svg:hover {
         fill: var(--gray);
     }
 }
+
 img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 
@@ -59,7 +65,7 @@ img {
 }
 
 .container {
-    margin: 25px 500px;
+    margin: 25px 200px;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -82,15 +88,17 @@ img {
     justify-content: space-between;
 }
 
-.footer {
-    position: fixed;
-    bottom: 35px;
-    text-align: center;
+
+.header__projects {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
 }
 
 .about_paragraph {
     text-align: justify;
 }
+
 .about_here {
     display: flex;
     padding: 0 50px;
@@ -100,4 +108,11 @@ img {
 
 .container_about {
     padding-top: 40px;
+}
+.back_link:hover {
+    svg {
+        path {
+            fill: var(--light_green);
+        }
+    }
 }

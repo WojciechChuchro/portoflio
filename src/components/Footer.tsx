@@ -1,16 +1,16 @@
 import Github
-    from "./Github.tsx";
+    from "../icons/Github.tsx";
 import Linkedin
-    from "./Linkedin.tsx";
+    from "../icons/Linkedin.tsx";
 
 const Footer = () => {
-    return <div className="footer">
+    return <footer className="footer">
         <div className="container_footer">
             <div>© 2024 Wojciech Chuchro</div>
             <Linkedin />
-            <Github />
+            <Github url="https://github.com/WojciechChuchro/RideMate"/>
         </div>
-    </div>
+    </footer>
 }
 
 export default Footer
