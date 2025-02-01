@@ -16,6 +16,13 @@
     --gray: #D1D1D1;
 }
 
+[data-theme="dark"] {
+    --light_black: red;
+    --black: #567aff;
+    --light_green: orange;
+    --green: blue;
+}
+
 body {
     font-size: 20px;
     background-color: var(--light_black);
