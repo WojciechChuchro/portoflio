@@ -2,15 +2,13 @@ import {FC} from "react";
 
 type DarkModeToggleProps = {
     isDark: boolean
-    onChange: any
+    onChange: () => void
 }
 const DarkModeToggle: FC<DarkModeToggleProps> = ({isDark, onChange}) => {
-    return <div>
-        Dark Mode
-        <input type="checkbox" checked={isDark}
-               onChange={onChange}
-        />
-    </div>
+    return <div className="toggle-wrapper">
+    <input type="checkbox" id="toggle" className="toggle-input" checked={isDark} onChange={onChange}/>
+    <label htmlFor="toggle" className="toggle-label"></label>
+</div>
 }
 
 export default DarkModeToggle
