@@ -16,17 +16,19 @@
     --gray: #D1D1D1;
 }
 
-[data-theme="dark"] {
-    --light_black: red;
-    --black: #567aff;
-    --light_green: orange;
-    --green: blue;
+[data-theme="light"] {
+    --black: #F8F8F8;
+    --light_black: #E8E8E8;
+    --light_green: #337418;
+    --green: #5DD62C;
+    --white: #0F0F0F;
+    --gray: #404040;
 }
 
 body {
     font-size: 20px;
     background-color: var(--light_black);
-    color: #F8F8F8;
+    color: var(--white)
 }
 
 
@@ -60,6 +62,10 @@ svg:hover {
     .icon {
         fill: var(--gray);
     }
+}
+
+.linkedin_icon {
+    fill: var(--black)
 }
 
 img {
@@ -160,19 +166,17 @@ img {
 }
 
 .toggle-input:checked + .toggle-label {
-    background-color: #3b82f6;  /* blue color when checked */
+    background-color: #3b82f6;
 }
 
 .toggle-input:checked + .toggle-label::after {
     transform: translateX(16px);
 }
 
-/* Optional: hover effect */
 .toggle-label:hover::after {
     box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
-/* Optional: focus styles for accessibility */
 .toggle-input:focus + .toggle-label {
     box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
 }
